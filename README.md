@@ -1,5 +1,8 @@
 # Hexo pages
-## This is the tech-blog code built with Hexo.
+
+This is the tech-blog code built with Hexo.
+
 
 Hao Chen 
+
 Sept 2020
