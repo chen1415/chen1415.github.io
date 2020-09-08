@@ -1,0 +1,8 @@
+.DS_Store
+.idea/
+*.log
+*.iml
+node_modules/
+
+# Ignore optional external libraries
+source/lib/*
