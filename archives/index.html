@@ -115,7 +115,7 @@
       <h1 class="site-title">夏_的博客</h1>
       <i class="logo-line"></i>
     </a>
-      <p class="site-subtitle" itemprop="description">Theme for Hexo</p>
+      <p class="site-subtitle" itemprop="description">Harvey's blog</p>
   </div>
 
   <div class="site-nav-right">
@@ -169,18 +169,21 @@
   <span class="search-icon">
     <i class="fa fa-search"></i>
   </span>
-  <div class="search-input-container"></div>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
-<div class="search-result-container">
-  <div class="algolia-stats"><hr></div>
-  <div class="algolia-hits"></div>
-  <div class="algolia-pagination"></div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
 </div>
 
-      
     </div>
   </div>
 
@@ -212,10 +215,10 @@
 
       <section class="site-overview-wrap sidebar-panel">
         <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="Theme NexT"
+    <img class="site-author-image" itemprop="image" alt="Harvey Chen"
       src="/images/avatar.gif">
-  <p class="site-author-name" itemprop="name">Theme NexT</p>
-  <div class="site-description" itemprop="description">Stay Simple. Stay NexT.</div>
+  <p class="site-author-name" itemprop="name">Harvey Chen</p>
+  <div class="site-description" itemprop="description">Never stand still.</div>
 </div>
 <div class="site-state-wrap animated">
   <nav class="site-state">
@@ -238,9 +241,6 @@
   </div>
 
 
-<div class="cc-license animated" itemprop="sponsor">
-  <span class="exturl cc-opacity" title="Deploy with Netlify → https://www.netlify.com" data-url="aHR0cHM6Ly93d3cubmV0bGlmeS5jb20="><img width="80" src="https://www.netlify.com/img/global/badges/netlify-dark.svg" alt="Netlify"></span>
-</div>
 
       </section>
     </div>
@@ -351,7 +351,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Theme NexT</span>
+  <span class="author" itemprop="copyrightHolder">Harvey Chen</span>
 </div>
   <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
   </div>
@@ -368,9 +368,7 @@
 
 
 
-  <script src="//cdn.jsdelivr.net/npm/algoliasearch@4.4.0/dist/algoliasearch-lite.umd.js"></script>
-<script src="//cdn.jsdelivr.net/npm/instantsearch.js@4.7.1/dist/instantsearch.production.min.js"></script><script src="/js/algolia-search.js"></script>
-
+  <script src="/js/local-search.js"></script>
 
 
 
