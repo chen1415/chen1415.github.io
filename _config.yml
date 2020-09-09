@@ -106,3 +106,9 @@ deploy:
   type: git
   repository: https://github.com/chen1415/chen1415.github.io
   branch: master
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
