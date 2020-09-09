@@ -112,3 +112,9 @@ search:
   field: post
   content: true
   format: html
+
+firestore:
+  enable: true
+  collection: articles #required, a string collection name to access firestore database
+  apiKey: AIzaSyBD8kI0OuhSVbXyOVjfNBJkvhruUmuv9Mo
+  projectId: harvey-s-blog
