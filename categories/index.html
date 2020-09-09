@@ -314,11 +314,7 @@
 
 
       
-    
-  <div class="comments">
-    <div id="lv-container" data-id="city" data-uid="MTAyMC81MTUxMy8yNzk5NA"></div>
-  </div>
-  
+    <div class="comments" id="gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -437,19 +433,23 @@
 
   
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.css">
+
 <script>
-NexT.utils.loadComments('#lv-container', () => {
-  window.livereOptions = {
-    refer: "categories/"
-  };
-  (function(d, s) {
-    var j, e = d.getElementsByTagName(s)[0];
-    if (typeof LivereTower === 'function') { return; }
-    j = d.createElement(s);
-    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-    j.async = true;
-    e.parentNode.insertBefore(j, e);
-  })(document, 'script');
+NexT.utils.loadComments('#gitalk-container', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '5cc947f4ad88c586d7fa',
+      clientSecret: 'f39791016dfa25e7d31c2d0defd4b31002b4761e',
+      repo        : 'blog-comments',
+      owner       : 'chen1415',
+      admin       : ['chen1415'],
+      id          : 'a676607444a8bc8b150c9a3aff884e61',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
 });
 </script>
 
