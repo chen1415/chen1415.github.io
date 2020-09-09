@@ -622,7 +622,7 @@ valine:
 
 # LiveRe comments system
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-livere_uid: MTAyMC81MTUxMy8yNzk5NA
+livere_uid: #MTAyMC81MTUxMy8yNzk5NA
 
 # Gitalk
 # For more information: https://gitalk.github.io, https://github.com/gitalk/gitalk
@@ -705,7 +705,7 @@ firestore:
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
 busuanzi_count:
-  enable: false
+  enable: true
   total_visitors: true
   total_visitors_icon: fa fa-user
   total_views: true
