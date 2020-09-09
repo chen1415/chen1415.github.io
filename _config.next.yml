@@ -264,7 +264,7 @@ reward_settings:
   # If true, a donate button will be displayed in every article by default.
   enable: true
   animation: false
-  comment: Buy me a coffee~
+  comment: Buy me a coffee :)
 
 reward:
   #wechatpay: /images/wechatpay.png
