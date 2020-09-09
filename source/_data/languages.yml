@@ -1,8 +1,8 @@
 en:
   name: English
-  subtitle: Harvey's blog
+  subtitle: To see the differences.
   author: Harvey Chen
-  description: Never stand still.
+  description: FrontEnd/BackEnd/DevOps
 ru:
   name: Русский
   subtitle: Тема для Hexo
