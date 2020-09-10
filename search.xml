@@ -3,19 +3,36 @@
   <entry>
     <title>Hexo + Next踩坑</title>
     <url>/2020/09/10/Hexo%20+%20next%E8%B8%A9%E5%9D%91/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<p>前前后后搞了快有一个星期的时间 终于把这个博客给搭起来了…</p>
+<p>用的是hexo + Git pages + Next theme 现在回过头来看其实这些都并不是很难 </p>
+<p>真正麻烦的地方就在于next的theme的一些配置都已经更新了(主要是他们人多力量大)</p>
+<p>但是很多教程并没有随着更新 尤其是各种插件这一块 所以还是踩了不少的坑</p>
+<a id="more"></a>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h2 id="Next-theme-的config文件配置"><a href="#Next-theme-的config文件配置" class="headerlink" title="Next theme 的config文件配置"></a>Next theme 的config文件配置</h2><h3 id="使用Alternate-Theme-Config"><a href="#使用Alternate-Theme-Config" class="headerlink" title="使用Alternate Theme Config"></a>使用Alternate Theme Config</h3><p>因为next他们这个theme的更新速度是很快的 如果直接从repo上面拉代码下来很容易产生conflict</p>
+<p>所以所有theme的主题配置推荐使用Alternate Theme Config</p>
+<p>主要的逻辑就是用根目录下的</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">_config.next.yml</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>代替原本的theme里面的config文件 具体参照下面的官方博客链接</p>
+<p><a href="https://theme-next.js.org/docs/getting-started/configuration.html">使用Alternate Theme Config</a></p>
+<h3 id="配置暗黑风格的scheme"><a href="#配置暗黑风格的scheme" class="headerlink" title="配置暗黑风格的scheme"></a>配置暗黑风格的scheme</h3><p>最新的next theme支持了暗黑风格主题 这个很赞</p>
+<p>我的博客用了 Gemini  + Dark 看上应该是舒服多了</p>
+<p><a href="https://theme-next.js.org/docs/theme-settings/index.html?highlight=scheme">Dark scheme config</a></p>
+<h2 id="Next-theme-的插件优化"><a href="#Next-theme-的插件优化" class="headerlink" title="Next theme 的插件优化"></a>Next theme 的插件优化</h2><h3 id="使用不蒜子显示访客人数"><a href="#使用不蒜子显示访客人数" class="headerlink" title="使用不蒜子显示访客人数"></a>使用不蒜子显示访客人数</h3><p>next theme的最新版已经在配置中集成了显示访客人数的功能</p>
+<p>不需要你再费劲的去改.njk文件了 </p>
+<p>但是网上能找的教程 目前很多还都是让你去改动layout里面的footer.ejs </p>
+<p>这实在是画蛇添足的举动 具体可以直接看下面官方博客的链接</p>
+<p><a href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics.html?highlight=busuanz">使用不蒜子</a></p>
+<h3 id="使用Gitalk的评论系统"><a href="#使用Gitalk的评论系统" class="headerlink" title="使用Gitalk的评论系统"></a>使用Gitalk的评论系统</h3><p>Next theme内置支持很多评论系统 然而我试了一下其中很多跟暗黑主题风格不搭配</p>
+<p>另外说一句 虽然它官方博客上也写了支持国内的几个评论系统</p>
+<p>但是我研究了一下发现都需要实名注册 实在是感觉不怎么安全 说不定以后就会给你因为各种理由停掉…</p>
+<p>所以最后还是选用了Gitalk这一套 虽然说管理的体验一般 但是好看呀！</p>
+<p><a href="https://theme-next.js.org/docs/third-party-services/comments.html">使用Gitalk</a></p>
+<h3 id="本地预览与上传更新"><a href="#本地预览与上传更新" class="headerlink" title="本地预览与上传更新"></a>本地预览与上传更新</h3><p>这里我写了一个.sh文件继承了几个简单的hexo命令 通过传入参数控制它的部署地址</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yourname.github.io/deploy.sh</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> -e <span class="string">&quot;清除旧文件&quot;</span></span><br><span class="line">hexo clean</span><br><span class="line"><span class="built_in">echo</span> -e <span class="string">&quot;\t\t......OK\n正在【生成】静态页面&quot;</span></span><br><span class="line">hexo g</span><br><span class="line"><span class="built_in">echo</span> -e <span class="string">&quot;\t\t......OK\n正在【发布】静态页面&quot;</span></span><br><span class="line">hexo d</span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;发布完成&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
       <categories>
         <category>hexo</category>
