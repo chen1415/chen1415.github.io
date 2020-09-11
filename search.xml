@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Hexo + Next踩坑</title>
-    <url>/2020/09/10/Hexo%20+%20next%E8%B8%A9%E5%9D%91/</url>
+    <url>/posts/896459f8/</url>
     <content><![CDATA[<p>前前后后搞了快有一个星期的时间 终于把这个博客给搭起来了…</p>
 <p>用的是hexo + Git pages + Next theme 现在回过头来看其实这些都并不是很难 </p>
 <p>真正麻烦的地方就在于next的theme的一些配置都已经更新了(主要是他们人多力量大)</p>
