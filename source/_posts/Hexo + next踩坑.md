@@ -1,10 +1,11 @@
 ---
 title: Hexo + Next踩坑
-date: 2020-09-10 13:03:37
 tags:
-	- hexo
+  - hexo
 categories:
-	- hexo
+  - hexo
+abbrlink: 896459f8
+date: 2020-09-10 13:03:37
 ---
 
 前前后后搞了快有一个星期的时间 终于把这个博客给搭起来了...
