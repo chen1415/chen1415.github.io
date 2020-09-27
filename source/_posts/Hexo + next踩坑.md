@@ -20,9 +20,9 @@ date: 2020-09-10 13:03:37
 
 ​    
 
-## Next theme 的config文件配置
+### Next theme 的config文件配置
 
-- **使用Alternate Theme Config**
+#### **用Alternate Theme Config**
 
 因为next他们这个theme的更新速度是很快的 如果直接从repo上面拉代码下来很容易产生conflict
 
@@ -38,7 +38,9 @@ _config.next.yml
 
 [使用Alternate Theme Config](https://theme-next.js.org/docs/getting-started/configuration.html)
 
-- **配置暗黑风格的scheme**
+  
+
+#### **配置暗黑风格的scheme**
 
 最新的next theme支持了暗黑风格主题 这个很赞
 
@@ -48,9 +50,9 @@ _config.next.yml
 
 ​    
 
-## Next theme 的插件优化
+### Next theme 的插件优化
 
-- **使用不蒜子显示访客人数**
+#### **使用不蒜子显示访客人数**
 
 next theme的最新版已经在配置中集成了显示访客人数的功能
 
@@ -62,7 +64,9 @@ next theme的最新版已经在配置中集成了显示访客人数的功能
 
 [使用不蒜子](https://theme-next.js.org/docs/third-party-services/statistics-and-analytics.html?highlight=busuanz)
 
-- **使用Gitalk的评论系统**
+  
+
+#### **使用Gitalk的评论系统**
 
 Next theme内置支持很多评论系统 然而我试了一下其中很多跟暗黑主题风格不搭配
 
@@ -76,7 +80,7 @@ Next theme内置支持很多评论系统 然而我试了一下其中很多跟暗
 
 ​    
 
-## 本地预览与上传更新
+### 本地预览与上传更新
 
 这里我写了一个.sh文件集成了几个简单的hexo命令 
 
