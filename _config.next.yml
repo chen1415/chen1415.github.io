@@ -627,17 +627,17 @@ livere_uid: #MTAyMC81MTUxMy8yNzk5NA
 # Gitalk
 # For more information: https://gitalk.github.io, https://github.com/gitalk/gitalk
 gitalk:
-  enable: true
-  github_id: chen1415
-  repo: blog-comments
-  client_id: 22fbc61f5d387d69fa45
-  client_secret: 18359dd4c4b1dc21321c9ab3cf76cadfc876e622
-  admin_user: chen1415
-  distraction_free_mode: true # Facebook-like distraction free mode
+  enable: false
+  # github_id: chen1415
+  # repo: blog-comments
+  # client_id: 22fbc61f5d387d69fa45
+  # client_secret: 18359dd4c4b1dc21321c9ab3cf76cadfc876e622
+  # admin_user: chen1415
+  # distraction_free_mode: true # Facebook-like distraction free mode
   # Gitalk's display language depends on user's browser or system environment
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
   # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
-  language:
+  # language:
 
 
 # ---------------------------------------------------------------
