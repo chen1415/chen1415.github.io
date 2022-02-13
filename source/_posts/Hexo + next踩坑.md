@@ -84,7 +84,7 @@ Next theme内置支持很多评论系统 然而我试了一下其中很多跟暗
 
 这里我写了一个.sh文件集成了几个简单的hexo命令 
 
-在root目录下床架deploy.sh
+在root目录下创建```deploy.sh```
 
 ``` bash
 yourname.github.io/deploy.sh
